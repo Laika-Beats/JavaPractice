@@ -1,20 +1,19 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		ArrayList<String> food = new ArrayList<String>();
+		ArrayList<String> animals = new ArrayList<String>();
 		
-		food.add("Pizza");
-		food.add("Cheeseburger");
-		food.add("hotdog");
+		animals.add("cat");
+		animals.add("dog");
+		animals.add("rat");
+		animals.add("bird");
 		
-		
-		for(int i=0; i < food.size(); i++) {
-			System.out.println(food.get(i));
-		}
-				
+		for(String i : animals) {
+			System.out.println(i);
+		}		
 	}
 
 }
