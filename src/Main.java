@@ -2,19 +2,22 @@
 public class Main {
 
 	public static void main(String[] args) {
-		int x = 3;
-		int y = 4;
-		
+		int a = add(3, 7, 9);
 
 		
-		System.out.println(add(x, y));
+		System.out.println(a);
 		
 		
 	}
 	
 	static int add(int x, int y) {
-		int z = x + y;
-		return z;
+		System.out.println("This is overload method 1.");
+		return x + y;
+		
+	}
+	static int add(int x, int y, int z) {
+		System.out.println("This is overload method 2.");
+		return x + y + z;
 		
 	}
 
