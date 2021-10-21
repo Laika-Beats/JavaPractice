@@ -1,19 +1,21 @@
-import java.util.*;
 
 public class Main {
 
 	public static void main(String[] args) {
+		int x = 3;
+		int y = 4;
 		
-		ArrayList<String> animals = new ArrayList<String>();
+
 		
-		animals.add("cat");
-		animals.add("dog");
-		animals.add("rat");
-		animals.add("bird");
+		System.out.println(add(x, y));
 		
-		for(String i : animals) {
-			System.out.println(i);
-		}		
+		
+	}
+	
+	static int add(int x, int y) {
+		int z = x + y;
+		return z;
+		
 	}
 
 }
