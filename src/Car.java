@@ -1,17 +1,9 @@
 
 public class Car {
-	String make;
-	int year;
-	double price;
+	String name;
 	
-	Car(String make, int year, double price){
-		this.make = make;
-		this.year = year;
-		this.price = price;
-	};
-	
-	public String toString() {
-		return  make + "\n" + year + "\n" + price;
+	Car(String name){
+		this.name = name;
 	}
 
 }
