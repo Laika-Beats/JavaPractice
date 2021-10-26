@@ -9,9 +9,9 @@ public class Car {
 		this.year = year;
 		this.price = price;
 	};
-
-	void drive() {
-		System.out.println("You drive the " + this.year + " " + this.make);
+	
+	public String toString() {
+		return  make + "\n" + year + "\n" + price;
 	}
 
 }

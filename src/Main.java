@@ -3,12 +3,12 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Pizza pizza = new Pizza("deep dish crust", "tomato", "mozzerella");
+		Car car = new Car("lexus", 2007, 10000.01);
 		
-		System.out.println("Here are the ingredients of your pizza: ");
-		System.out.println(pizza.bread);
-		System.out.println(pizza.sauce);
-		System.out.println(pizza.cheese);
+		System.out.println(car.make);
+		System.out.println(car.year);
+		System.out.println(car.price);
+		System.out.println(car);
 		
 	}
 }
