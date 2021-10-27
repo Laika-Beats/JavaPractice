@@ -3,11 +3,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Hero hero1 = new Hero("Batman", 42, "financial wealth");
-		Hero hero2 = new Hero("Spiderman", 18, "super strength and spider sense");
-		
-		System.out.println(hero1);
-		System.out.println(hero2);
-		
+	Automobile racer1 = new Automobile("Claire", "Denver", 33, "Lexus", "IS350 Sport", 2021);
+	
+	System.out.println(racer1);
+	
+	racer1.readyToRace();
+	
 	}
 }
