@@ -1,24 +1,36 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		Scanner scanner = new Scanner(System.in);
+		try {
+			
+			Scanner scanner = new Scanner(System.in);
+				
+			System.out.println("Enter a whole number to divide: ");
+			int x = scanner.nextInt();
+				
+			System.out.println("Enter a whole number to divide by: ");
+			int y = scanner.nextInt();
+				
+			int z = x/y;
+				
+			System.out.println("result: " + z);
 		
-		Animal animal;
-		
-		System.out.println("What animal do you want?");
-		System.out.print("(1=dog) or (2=cat)");
-		int choice = scanner.nextInt();
-		
-		if (choice == 1) {
-			animal = new Dog();
-			animal.speak();
 		}
-		else if (choice == 2) {
-			animal = new Cat();
-			animal.speak();	
-		} 
+		catch (ArithmeticException e) {
+			System.out.println("You can't divide by zero! IDIOT!");
+		}
+		catch(InputMismatchException e) {
+			System.out.println("Please enter a number!");
+			
+		}
+		catch(Exception e) {
+			System.out.println("Something went wrong!");	
+		}
+		
+		
 	}
 }
